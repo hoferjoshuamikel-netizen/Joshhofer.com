@@ -36,6 +36,14 @@ These are observations, not replacement instructions. Preserve MX, TXT, SPF, DKI
 
 GitHub rejected a Contents API create with HTTP 403: Resource not accessible by integration. No remote commit was created. The connected integration needs repository contents write access. No DNS changes have been made. A separate PDF résumé was found in 99_UNSORTED; it still says Expected August 2026 and contains a private phone number, so it is not suitable for direct publication.
 
+## Homepage concept revision, 12 September 2026
+
+The owner rejected the minimal temporary layout and requested scrolling animation, submarine and aircraft carrier imagery, Plant Wizard, and co-ops. The homepage now follows that direction while leaving the larger permanent website for later discovery. This change does not authorize or perform a domain cutover.
+
+The repository remained empty and the new Contents write was again rejected by GitHub with the same integration-level 403. ChatGPT approval preferences do not grant GitHub OAuth or app repository scopes; those preferences were not changed. The separate Sites deployment mirror continues to preserve the source commits pending a successful canonical GitHub push.
+
+The Plant Wizard, CPP, and Dynalec source folders were rechecked and contained no files. Two proposal CAD images were recovered from the private old-site archive. No old source files were removed or altered. New public Navy imagery and its reuse sources are recorded in the media inventory.
+
 ## Sources
 
 - GitHub repository metadata and branches/contents endpoints, read through the connected GitHub account.
