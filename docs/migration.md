@@ -1,0 +1,49 @@
+# Audit and migration record
+
+## Observed starting state
+
+- GitHub: hoferjoshuamikel-netizen/Joshhofer.com, public, created 11 September 2026. Empty repository; zero branches, files, commits, dependencies or deployment configuration. Default branch name was main but no branch reference existed. Repository metadata reported has_pages=false.
+- Registrar: Squarespace Domains LLC, confirmed by Verisign RDAP.
+- Current www site: Google Sites. HTTPS returned HTTP 200 and Google Sites markup and service headers. The bare domain redirected to https://www.joshhofer.com/.
+- No deployed code exists in the new repository, so it cannot be the source serving the current live site.
+- Live LinkedIn link: https://www.linkedin.com/in/joshua-hofer-11098a27a/
+- Source folder: JoshHofer website source. Five graduation images were available. The 00_CURRENT_RESUME and 14_OLD_JOSHHOOFER_SITE folders were empty before this work.
+
+## DNS before migration
+
+| Record | Observed value | TTL |
+| --- | --- | --- |
+| www CNAME | ghs.googlehosted.com. | 1800 |
+| Apex A | 198.49.23.145, 198.49.23.144, 198.185.159.144, 198.185.159.145 | 14400 |
+| Nameservers | ns-cloud-a1 through ns-cloud-a4.googledomains.com. | 21600 |
+| MX | aspmx.l.google.com and alt1 through alt4.aspmx.l.google.com | 14400 |
+| Apex AAAA | No answer returned | — |
+
+These are observations, not replacement instructions. Preserve MX, TXT, SPF, DKIM, DMARC, nameservers and unrelated records. Change only the verified website records when all release gates pass.
+
+## Cutover gates
+
+1. Preserve useful old material, retain the original Google Site, and track unresolved asset downloads.
+2. Restore GitHub write access; push the exact local commits to main and verify the remote tree.
+3. Verify the separate deployment URL and valid HTTPS with no certificate bypass.
+4. Verify desktop and narrow mobile layouts, image loading, and contact links.
+5. Confirm access to the domain's DNS manager, record its existing configuration, and obtain the destination's exact DNS instructions.
+6. Tell the owner which website records will change and the rollback values before the production mutation.
+7. Move website records only, then confirm HTTPS and content on both the apex and www hostnames.
+8. Leave the original Google Site and private archive intact.
+
+## Current blocker
+
+GitHub rejected a Contents API create with HTTP 403: Resource not accessible by integration. No remote commit was created. The connected integration needs repository contents write access. No DNS changes have been made. A separate PDF résumé was found in 99_UNSORTED; it still says Expected August 2026 and contains a private phone number, so it is not suitable for direct publication.
+
+## Sources
+
+- GitHub repository metadata and branches/contents endpoints, read through the connected GitHub account.
+- HTTPS response and HTML from https://www.joshhofer.com/ and the linked pages.
+- DNS responses from https://dns.google/resolve?name=joshhofer.com&type=A and corresponding NS/MX/AAAA and www CNAME queries. Raw pre-change answers are in the private archive.
+- Registrar record: https://rdap.verisign.com/com/v1/domain/joshhofer.com
+- Source file and folder metadata read through the connected Google Drive account.
+
+## Rollback
+
+Restore the recorded original www CNAME and any changed apex website records. Keep original Google Sites custom-domain configuration in place until cutover has been verified. No DNS or original-site deletion is part of this revision.
