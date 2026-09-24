@@ -737,3 +737,25 @@
                                                                                                                                                                                                                                                                                                                                                                                                               padding:25px}
                                                                                                                                                                                                                                                                                                                                                                                                               html:not(.motion-ready) .concept-caption,html.reduced-motion .concept-caption{
                                                                                                                                                                                                                                                                                                                                                                                                                 position:relative}
+
+/* Tablet portraits keep the complete vessels in wide frames. */
+@media (min-width:701px) and (max-width:1000px) {
+  html.motion-ready .hero { height:auto; }
+  html.motion-ready .hero-stage {
+    position:relative;
+    top:auto;
+    height:auto;
+    min-height:0;
+    display:block;
+  }
+  html.motion-ready .hero-heading { transform:none; opacity:1; }
+  html.motion-ready .naval-pair, .naval-pair {
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr;
+    height:auto;
+    max-height:none;
+    transform:none;
+  }
+  .naval-photo { aspect-ratio:2.3; }
+  html.motion-ready .carrier img, html.motion-ready .submarine img { transform:none; }
+}
