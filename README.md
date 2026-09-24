@@ -1,12 +1,12 @@
 # JoshHofer.com
 
-A photographic, scrolling homepage concept for Joshua Hofer, Electromechanical Engineer. Naval imagery opens the page, followed by Plant Wizard, Dynalec and CPP co-ops, a graduation portrait, and contact links.
+A photographic, scrolling homepage concept for Joshua Hofer, Electromechanical Engineer. Naval imagery opens the page, followed by a prominent graduation portrait, Plant Wizard, Dynalec and CPP co-ops, and contact links.
 
 ## Source of truth
 
 Canonical repository: https://github.com/hoferjoshuamikel-netizen/Joshhofer.com
 
-The repository was empty at audit on 11 September 2026. A new write attempt on 12 September 2026 still returned HTTP 403 (Resource not accessible by integration). These local commits are ready to push once repository write access is available. Do not describe the GitHub repository as synchronized until that push is verified. The Sites remote is a deployment mirror, not the canonical development repository.
+The repository was empty at audit on 11 September 2026. Write attempts on 12 and 24 September 2026 still returned HTTP 403 (Resource not accessible by integration). These local commits are ready to push once repository write access is available. Do not describe the GitHub repository as synchronized until that push is verified. The Sites remote is a deployment mirror, not the canonical development repository.
 
 ## Development
 

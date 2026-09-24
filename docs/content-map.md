@@ -1,6 +1,6 @@
 # Homepage content map
 
-Updated 12 September 2026. Add files to the existing [JoshHofer website source folder](https://drive.google.com/drive/folders/18VaSeCeRkicjGEDyod3nN-WcgkaIN_O6). These are source materials; uploads do not automatically publish. Curated website content and optimized media belong in the canonical GitHub repository after review.
+Updated 24 September 2026. Add files to the existing [JoshHofer website source folder](https://drive.google.com/drive/folders/18VaSeCeRkicjGEDyod3nN-WcgkaIN_O6). These are source materials; uploads do not automatically publish. Curated website content and optimized media belong in the canonical GitHub repository after review.
 
 | Homepage section | Existing Drive folder | What to add next |
 | --- | --- | --- |
@@ -22,7 +22,7 @@ Keep original-resolution photographs and uncompressed source video when availabl
 - Naval opening: two real U.S. Navy photographs, local optimized sizes, credits, and restrained scroll movement.
 - Plant Wizard: two actual early CAD studies from the original team presentation. They are explicitly identified as proposal concepts. Final hardware, current architecture, personal contributions, testing, and outcomes still need current sources.
 - Co-ops: sourced, general descriptions with expandable contributions. Dates and employer media await current approved material.
-- About: graduation portrait, Wentworth identity, and brief personal introduction.
+- About: a large graduation portrait immediately after the naval opening, Wentworth identity, and brief personal introduction.
 - Contact: verified LinkedIn and GitHub profiles plus the supplied public email.
 
-The folder choices are stable places for future content; the full permanent site architecture remains open. Leave historical files in `14_OLD_JOSHHOOFER_SITE` and retain the original Google Site.
+The folder choices are stable places for future content; the full permanent site architecture remains open. Leave historical files in [old-site archive folder](https://drive.google.com/drive/folders/1apUklhW5Gw2JjFPFijDqU1Ai6weMHUiA) and retain the original Google Site.

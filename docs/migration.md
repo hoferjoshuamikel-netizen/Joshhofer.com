@@ -7,7 +7,7 @@
 - Current www site: Google Sites. HTTPS returned HTTP 200 and Google Sites markup and service headers. The bare domain redirected to https://www.joshhofer.com/.
 - No deployed code exists in the new repository, so it cannot be the source serving the current live site.
 - Live LinkedIn link: https://www.linkedin.com/in/joshua-hofer-11098a27a/
-- Source folder: JoshHofer website source. Five graduation images were available. The 00_CURRENT_RESUME and 14_OLD_JOSHHOOFER_SITE folders were empty before this work.
+- Source folder: JoshHofer website source. Five graduation images were available. The 00_CURRENT_RESUME and old-site archive folders were empty before this work.
 
 ## DNS before migration
 
@@ -55,3 +55,14 @@ The Plant Wizard, CPP, and Dynalec source folders were rechecked and contained n
 ## Rollback
 
 Restore the recorded original www CNAME and any changed apex website records. Keep original Google Sites custom-domain configuration in place until cutover has been verified. No DNS or original-site deletion is part of this revision.
+
+
+## Recheck, 24 September 2026
+
+The www CNAME remains `ghs.googlehosted.com.` and the apex A records remain the four Squarespace forwarding addresses listed above. Both the apex and www were fetched with certificate validation enabled; the apex redirects to www, and the Google Sites page returns HTTP 200 over HTTPS. The old site remains live.
+
+The private archive ZIP was verified in Drive at the same file ID, with a size of 21,551,932 bytes. A metadata-only attempt to correct the existing Drive folder label was denied with appNotAuthorizedToFile. The folder name remains unchanged; its ID, contents, and location were retained. Repository documentation links to the folder without repeating its misspelled label. All public-facing domain references use JoshHofer.com.
+
+GitHub repository metadata still shows an empty public repository with no branches. Another attempt to create README.md returned HTTP 403, Resource not accessible by integration. No GitHub changes or domain changes were made. The website is ready for canonical synchronization when GitHub repository write access is restored.
+
+The homepage places graduation photography immediately after the naval opening. Plant Wizard follows, using labeled original proposal concepts. The current Plant Wizard and current résumé folders remain empty. The earlier responsive and interaction verification is retained; the final revision preserves the same component layouts and native scroll behavior.
