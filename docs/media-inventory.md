@@ -33,3 +33,19 @@ Navy image source URLs:
 Source pages and [DVIDS reuse notice](https://www.dvidshub.net/about/copyright) were inspected. Credits and the notice's nonendorsement statement are in the homepage footer. Vessel imagery supplies industry context; it does not imply that Joshua designed or built either depicted vessel, or that the U.S. Navy endorses him. No ship diagrams, employer designs, or restricted material are published.
 
 Plant Wizard concept credits: Joshua Hofer, Kannon Behrens, and Jeffrey Caldwell. No stock agriculture photograph from the proposal was reused. The final build's imagery is still requested in `docs/content-map.md`.
+
+## New source review, 24 September 2026
+
+The owner supplied additional materials in the existing Drive source folders. Original files, sharing, and folder organization were preserved. Four selected image derivatives were added; no original PDF, report, employee document, or raw folder dump was copied wholesale into the public site.
+
+| Published file | Supplied source | Use |
+| --- | --- | --- |
+| `plant-wizard-final-cad.webp` | `Final Cad Model.png` | Final CAD supplied by the owner, 377 × 512. Lossless WebP; no generated replacement or invented geometry. |
+| `plant-wizard-assembly.webp` | `Media/Edited/IMG_8382 (1).jpg` | Team assembly photograph, optimized to 1500 × 1198, metadata removed. |
+| `plant-wizard-prototype.webp` | `Media/Final media/IMG_20260803_140040.heic` | Real physical prototype; HEIC decoded, cropped around the cabinet, and exported at 926 × 1500 without metadata. |
+| `foundry-portrait.webp` | `CPP photos and videos zip/20240313_124217.jpg` | General foundry portrait, 1200 × 1600. Caption does not identify a particular employer site or claim this was taken during the co-op. Original filename predates the résumé's co-op start; location/context awaits confirmation. |
+| `documents/joshua-hofer-resume.pdf` | `00_CURRENT_RESUME/Joshua Hofer Resume 2026.pdf` | Public derivative: private phone and school-email header replaced with `me@joshhofer.com`; body text preserved. PDF metadata cleaned and output visually inspected. Original remains unchanged. |
+
+Plant Wizard factual source: *Final Technical Report Plant Wizard*, dated 11 August 2026. Homepage copy uses the abstract, scope boundaries, system architecture, and Appendix E.1. It credits Joshua's electrical/systems integration, Kannon's irrigation work, and Jeffrey's mechanical/robotics work. It distinguishes demonstrated subsystem operation from incomplete quantitative calibration, full crop-cycle testing, and future trained vision models. No unverified numerical performance result is promoted.
+
+The report contains collaborators' private contact information, so it remains in Drive. CPP personnel documents, the employee handbook, sample identifiers, scales, and detailed test photographs were not selected. Folder membership alone is not treated as proof that every image is suitable for public release.

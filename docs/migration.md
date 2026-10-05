@@ -24,7 +24,7 @@ These are observations, not replacement instructions. Preserve MX, TXT, SPF, DKI
 ## Cutover gates
 
 1. Preserve useful old material, retain the original Google Site, and track unresolved asset downloads.
-2. Restore GitHub write access; push the exact local commits to main and verify the remote tree.
+2. Synchronize source to canonical GitHub main and verify that the complete Git tree matches the deployment source.
 3. Verify the separate deployment URL and valid HTTPS with no certificate bypass.
 4. Verify desktop and narrow mobile layouts, image loading, and contact links.
 5. Confirm access to the domain's DNS manager, record its existing configuration, and obtain the destination's exact DNS instructions.
@@ -32,9 +32,9 @@ These are observations, not replacement instructions. Preserve MX, TXT, SPF, DKI
 7. Move website records only, then confirm HTTPS and content on both the apex and www hostnames.
 8. Leave the original Google Site and private archive intact.
 
-## Current blocker
+## Historical GitHub blocker (resolved 24 September 2026)
 
-GitHub rejected a Contents API create with HTTP 403: Resource not accessible by integration. No remote commit was created. The connected integration needs repository contents write access. No DNS changes have been made. A separate PDF résumé was found in 99_UNSORTED; it still says Expected August 2026 and contains a private phone number, so it is not suitable for direct publication.
+GitHub originally rejected a Contents API create with HTTP 403: Resource not accessible by integration. The repository was missing from the app's selected repositories. The owner corrected this on 24 September; subsequent writes succeeded. Earlier résumé files in 99_UNSORTED were not used for publication.
 
 ## Homepage concept revision, 12 September 2026
 
@@ -66,3 +66,13 @@ The private archive ZIP was verified in Drive at the same file ID, with a size o
 GitHub repository metadata still shows an empty public repository with no branches. Another attempt to create README.md returned HTTP 403, Resource not accessible by integration. No GitHub changes or domain changes were made. The website is ready for canonical synchronization when GitHub repository write access is restored.
 
 The homepage places graduation photography immediately after the naval opening. Plant Wizard follows, using labeled original proposal concepts. The current Plant Wizard and current résumé folders remain empty. The earlier responsive and interaction verification is retained; the final revision preserves the same component layouts and native scroll behavior.
+
+## Access restored and new source material, later on 24 September 2026
+
+The owner authorized the GitHub app for Joshhofer.com. All five preserved website revisions were imported into canonical main with matching Git tree hashes, then fetched and compared. See `github-import.md`; original history was retained and no force update was used.
+
+The owner then added the résumé, Plant Wizard, and CPP materials. Direct folder reads revealed files that were not yet returned by Drive search. The homepage now uses the final Plant Wizard CAD, assembly and physical-prototype photographs, documented electrical/systems contributions, a general foundry portrait, and co-op dates from the supplied résumé. Employee documents, detailed foundry test photographs, original project reports with contact details, and incomplete media remain private. No Drive source files were moved or deleted.
+
+The public résumé derivative removes the private phone number and uses me@joshhofer.com. Its supplied body text remains unchanged, including Expected August 2026; that education wording still needs the owner's confirmation before production launch.
+
+The preview remains owner-private. JoshHofer.com and www.JoshHofer.com have not been moved. Remaining cutover work is to select/confirm a public deployment that supports the custom domain, obtain its exact domain records, confirm DNS-manager access, notify the owner of the website-record changes and rollback values, and verify both hostnames after the switch. Do not point a public domain at the private review page.

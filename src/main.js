@@ -7,6 +7,7 @@ const revealItems = document.querySelectorAll('[data-reveal]');
 const conceptViews = [...document.querySelectorAll('[data-concept]')];
 const chapters = [...document.querySelectorAll('[data-chapter]')];
 const chapterNumber = document.querySelector('.concept-number');
+const chapterLabel = document.querySelector('.concept-label');
 const menuLinks = [...document.querySelectorAll('.masthead nav a')];
 let scheduled = false;
 let activeConcept = '';
@@ -20,7 +21,9 @@ function setConcept(name) {
     view.classList.toggle('is-active', active);
     view.setAttribute('aria-hidden', String(!active));
   });
-  chapterNumber.textContent = name === 'trays' ? '02 / 02' : '01 / 02';
+  const index = conceptViews.findIndex(view => view.dataset.concept === name);
+  chapterNumber.textContent = `${String(index + 1).padStart(2, '0')} / ${String(conceptViews.length).padStart(2, '0')}`;
+  chapterLabel.textContent = conceptViews[index]?.dataset.caption || '';
 }
 
 function paintScroll() {
@@ -31,7 +34,11 @@ function paintScroll() {
   const heroTop = hero.getBoundingClientRect().top;
   const travel = Math.max(1, hero.offsetHeight - viewport + 76);
   root.style.setProperty('--hero-progress', motionPreference.matches ? '0' : clamp((76 - heroTop) / travel).toFixed(4));
-  setConcept(chapters[1].getBoundingClientRect().top < viewport * .76 ? 'trays' : 'cylinder');
+  let currentChapter = chapters[0];
+  chapters.forEach(chapter => {
+    if (chapter.getBoundingClientRect().top < viewport * .76) currentChapter = chapter;
+  });
+  setConcept(currentChapter.dataset.chapter);
   let current = '';
   menuLinks.forEach(link => {
     const section = document.querySelector(link.getAttribute('href'));
@@ -67,5 +74,5 @@ function applyMotionPreference() {
 motionPreference.addEventListener('change', applyMotionPreference);
 window.addEventListener('load', requestPaint, { once: true });
 applyMotionPreference();
-setConcept('cylinder');
+setConcept(chapters[0].dataset.chapter);
 paintScroll();

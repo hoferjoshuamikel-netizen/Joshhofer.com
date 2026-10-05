@@ -3,7 +3,7 @@
 Audit date: 11 September 2026. Original site: https://www.joshhofer.com/
 Native Google Sites address observed in page source: https://sites.google.com/view/joshhofer
 
-The complete captured snapshot is retained privately in the project's [old-site archive folder](https://drive.google.com/drive/folders/1apUklhW5Gw2JjFPFijDqU1Ai6weMHUiA) source folder. This repository intentionally contains an inventory only, because old pages and embedded documents include unreviewed personal and application information.
+The complete captured snapshot is retained privately in the project's old-site archive folder source folder. This repository intentionally contains an inventory only, because old pages and embedded documents include unreviewed personal and application information.
 
 Captured: 17 page URLs, original HTML and extracted text, 39 downloadable assets, and eight exported documents. The root URL and /home contain the same homepage.
 
