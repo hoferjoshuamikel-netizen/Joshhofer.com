@@ -32,7 +32,7 @@ Navy image source URLs:
 
 Source pages and [DVIDS reuse notice](https://www.dvidshub.net/about/copyright) were inspected. Credits and the notice's nonendorsement statement are in the homepage footer. Vessel imagery supplies industry context; it does not imply that Joshua designed or built either depicted vessel, or that the U.S. Navy endorses him. No ship diagrams, employer designs, or restricted material are published.
 
-Plant Wizard concept credits: Joshua Hofer, Kannon Behrens, and Jeffrey Caldwell. No stock agriculture photograph from the proposal was reused. The final build's imagery is still requested in `docs/content-map.md`.
+Plant Wizard concept credits: Joshua Hofer, Kannon Behrens, and Jeffrey Caldwell. No stock agriculture photograph from the proposal was reused. Final build imagery was subsequently supplied and is documented below.
 
 ## New source review, 24 September 2026
 

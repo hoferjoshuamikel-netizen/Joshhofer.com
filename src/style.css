@@ -767,6 +767,7 @@ html:not(.motion-ready) .concept-caption,html.reduced-motion .concept-caption{
 .project-photo { padding:20px 18px 64px; }
 .prototype-photo { padding:0 0 54px; }
 .concept-caption { font-size:14px; }
+.concept-caption::before { content:''; position:absolute; inset:0 0 auto; height:2px; background:#4c6747; transform:scaleX(var(--plant-progress,0)); transform-origin:left; }
 .concept-number { flex-shrink:0; font-variant-numeric:tabular-nums; }
 .experience-body { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.15fr); gap:clamp(40px,7vw,110px); align-items:start; }
 .foundry-portrait { position:sticky; top:108px; }

@@ -10,7 +10,7 @@ GitHub access was restored on 24 September 2026 after the owner added this repos
 
 ## Development
 
-Node.js 22 or newer is recommended. Install with `npm ci`, develop with `npm run dev`, and build with `npm run build`. The public deployment consists only of `dist/`. Vite is the only development dependency; the published page has no JavaScript framework or third-party scripts. The permanent site's content system remains undecided.
+Use Node.js 22 (`.nvmrc` and `package.json` pin the deployment major version). Install with `npm ci`, develop with `npm run dev`, and build with `npm run build`. The public deployment consists only of `dist/`. Vite is the only development dependency; the published page has no JavaScript framework or third-party scripts. The permanent site's content system remains undecided.
 
 ## Content and media
 
@@ -26,6 +26,6 @@ See `archive/old-site/README.md` and `docs/migration.md`. Do not delete the orig
 
 ## Motion and content editing
 
-Edit homepage copy and semantic sections in `index.html`, presentation in `src/style.css`, and scroll behavior in `src/main.js`. Motion uses native scrolling, IntersectionObserver, and requestAnimationFrame; there is no scroll hijacking or animation dependency. The desktop opening pins briefly, vessel images move at different rates, and the three Plant Wizard images follow the reading position. System reduced-motion preferences provide static reading with a caption for every image. The page and co-op details remain usable without JavaScript.
+Edit homepage copy and semantic sections in `index.html`, presentation in `src/style.css`, and scroll behavior in `src/main.js`. Motion uses native scrolling, IntersectionObserver, and requestAnimationFrame; there is no scroll hijacking or animation dependency. The desktop opening pins briefly, vessel images move at different rates, and the three Plant Wizard images crossfade with the reading position. A fine progress line tracks the project story. Scroll updates are scheduled once per frame, with layout measurements grouped before visual updates. System reduced-motion preferences provide static reading with a caption for every image. The page and co-op details remain usable without JavaScript.
 
-This is an iterative homepage concept, not the completed permanent website. It has no invented project outcomes, detailed employer designs, or placeholder download buttons. Deployment still uses a separate private review URL. The original JoshHofer.com domain has not moved.
+This is an iterative homepage concept, not the completed permanent website. It has no invented project outcomes, detailed employer designs, or placeholder download buttons. Vercel is the selected deployment target. See `docs/vercel.md` for the existing-project settings and domain cutover sequence. The earlier private Sites preview remains preserved. The original JoshHofer.com domain has not been changed by this update.
